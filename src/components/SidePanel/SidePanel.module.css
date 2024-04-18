@@ -5,9 +5,25 @@
   height: inherit;
   padding: 1rem;
 }
-.topItems li {
+.menuItem {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  padding: 8px;
+}
+.icon,
+.dropdownIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.label {
+  margin-left: 8px;
+  flex-grow: 1;
+}
+.topItems li,
+.bottomItems li {
+  display: flex;
   align-items: center;
   color: var(--menuText);
   font-size: 1rem;

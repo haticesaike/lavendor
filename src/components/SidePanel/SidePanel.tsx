@@ -9,55 +9,48 @@ import pieChart from "../../assets/pie-chart-03.svg";
 import settings from "../../assets/settings-01.svg";
 import users from "../../assets/users-01.svg";
 
-export default function SidePanel() {
+const menuItems = [
+  { icon: homeLine, text: "Business Management", dropdownIcon: chevronDown },
+  { icon: barChart, text: "Insights & Analytics", dropdownIcon: chevronDown },
+  { icon: layersThree, text: "Integration", dropdownIcon: chevronDown },
+  { icon: checkDone, text: "Tasks", dropdownIcon: chevronDown },
+  { icon: pieChart, text: "Reporting", dropdownIcon: chevronDown },
+  { icon: users, text: "Users", dropdownIcon: chevronDown },
+];
+
+const bottomItems = [
+  { icon: lifeBuoy, text: "Support" },
+  { icon: settings, text: "Settings" },
+];
+
+function SidePanel() {
   return (
     <div className={styles.menu}>
       <ul className={styles.topItems}>
-        <li>
-          <img src={homeLine} alt="home" />
-          Businnes Management
-          <img src={chevronDown} alt="dropdown" />
-        </li>
-
-        <li>
-          <img src={barChart} alt="barChart" />
-          Insight&Analytics
-          <img src={chevronDown} alt="dropdown" />
-        </li>
-
-        <li>
-          <img src={layersThree} alt="layersThree" />
-          Integration
-          <img src={chevronDown} alt="dropdown" />
-        </li>
-
-        <li>
-          <img src={checkDone} alt="checkDone" />
-          Tasks
-          <img src={chevronDown} alt="dropdown" />
-        </li>
-
-        <li>
-          <img src={pieChart} alt="pieChart" />
-          Reporting
-        </li>
-        <img src={chevronDown} alt="dropdown" />
-        <li>
-          <img src={users} alt="users" />
-          Users
-          <img src={chevronDown} alt="dropdown" />
-        </li>
+        {menuItems.map((item, index) => (
+          <li key={index} className={styles.menuItem}>
+            <img src={item.icon} alt={item.text} className={styles.icon} />
+            <span className={styles.label}>{item.text}</span>
+            {item.dropdownIcon && (
+              <img
+                src={item.dropdownIcon}
+                alt="dropdown"
+                className={styles.dropdownIcon}
+              />
+            )}
+          </li>
+        ))}
       </ul>
       <ul className={styles.bottomItems}>
-        <li>
-          <img src={lifeBuoy} alt="lifeBuoy" />
-          Support
-        </li>
-        <li>
-          <img src={settings} alt="settings" />
-          Settings
-        </li>
+        {bottomItems.map((item, index) => (
+          <li key={index} className={styles.menuItem}>
+            <img src={item.icon} alt={item.text} className={styles.icon} />
+            <span className={styles.label}>{item.text}</span>
+          </li>
+        ))}
       </ul>
     </div>
   );
 }
+
+export default SidePanel;
