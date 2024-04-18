@@ -11,9 +11,10 @@
   flex: 1;
   background-color: var(--white);
   height: 100%;
+  background-color: black;
 }
 .right {
-  flex: 5;
+  flex: 4;
   background-color: var(--white);
   height: 100%;
 }
