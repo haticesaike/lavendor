@@ -1,15 +1,14 @@
-import "./App.css";
 import ChatScreen from "./components/ChatScreen/ChatScreen";
 import LeftSideBar from "./components/LeftSideBar/LeftSideBar";
+import styles from "./App.module.css";
 
 function App() {
   return (
-    <div className="App">
-      <div className="leftSideBar ">
+    <div className={styles.App}>
+      <div className={styles.left}>
         <LeftSideBar />
       </div>
-      <div className="chatScreen">
-        {" "}
+      <div className={styles.right}>
         <ChatScreen />
       </div>
     </div>

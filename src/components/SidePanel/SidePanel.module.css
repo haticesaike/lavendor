@@ -1,30 +1,23 @@
 .menu {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Ana öğeleri üstte, alt öğeleri altta tutar */
-  height: inherit; /* Yüksekliği ebeveyn öğeden alır */
-  background-color: rgb(137, 142, 142);
+  justify-content: space-between;
+  height: inherit;
+  padding: 1rem;
 }
-
-.topItems {
-  list-style: none; /* Liste öğelerinin önündeki noktaları kaldırır */
-  padding: 0; /* Varsayılan padding'i sıfırlar */
+.topItems li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--menuText);
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  padding: 0.5rem;
 }
-
-.bottomItems {
-  list-style: none;
-  padding: 0;
-  margin-top: auto; /* Bu öğeleri altta tutmak için kullanılır */
-}
-
-.topItems li,
-.bottomItems li {
-  padding: 8px 16px; /* Liste öğeleri için padding */
-  cursor: pointer; /* Mouse imlecini el şekline çevirir */
-}
-
-/* Liste öğeleri için ekstra stiller ekleyebilirsiniz, örneğin hover efektleri vb. */
 .topItems li:hover,
 .bottomItems li:hover {
-  background-color: #f5f5f5; /* Üzerine gelindiğinde arkaplan rengini değiştirir */
+  background-color: #f5f5f5;
+  cursor: pointer;
 }

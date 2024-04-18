@@ -6,14 +6,13 @@
   background-color: var(--bgColor);
   gap: 30px;
   padding: 34px 26px;
-  position: relative;
 }
-.leftSideBar {
+.left {
   flex: 1;
   background-color: var(--white);
   height: 100%;
 }
-.chatScreen {
+.right {
   flex: 3;
   background-color: var(--white);
   height: 100%;
