@@ -1,6 +1,7 @@
 .leftSideBar {
   background-color: var(--white);
   height: 100%;
+  border-radius: 5px;
 }
 .divider {
   border: 1px solid var(--dividerColor);

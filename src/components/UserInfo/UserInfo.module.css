@@ -37,6 +37,11 @@
   font-family: "Inter";
   font-style: normal;
   color: var(--menuText);
-
-  margin: 0;
+}
+.email {
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: "Inter";
+  font-style: normal;
+  color: var(--textColor);
 }
