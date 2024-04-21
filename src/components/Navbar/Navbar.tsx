@@ -4,7 +4,6 @@ function Navbar() {
   return (
     <div className={styles.navbar}>
       <img src={Logo} alt="logo" />
-      <div className={styles.logoText}>LAVENDOR</div>
     </div>
   );
 }
