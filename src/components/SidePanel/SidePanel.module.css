@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem;
-  height: 72%;
+  height: 71%;
 }
 .menuItem {
   display: flex;
@@ -25,7 +25,7 @@
   display: flex;
   align-items: center;
   color: var(--menuText);
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-style: normal;

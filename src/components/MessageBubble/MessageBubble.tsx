@@ -1,5 +1,5 @@
 import styles from "./MessageBubble.module.css";
-import avatarImg from "../../assets/logo.svg";
+import avatarImg from "../../assets/favicon.svg";
 interface MessageBubbleProps {
   text: string;
   sender: string;
