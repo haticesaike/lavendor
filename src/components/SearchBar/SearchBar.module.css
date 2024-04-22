@@ -1,5 +1,18 @@
 .searchBar {
   display: flex;
   justify-content: center;
-  height: 9%;
+}
+
+.searchBarInput {
+  width: 85%;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .searchBar {
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+
 }

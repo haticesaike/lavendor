@@ -18,12 +18,14 @@
   width: 100%;
   flex-direction: column;
 }
+
 .nameWithIcon {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
 }
+
 .logOut {
   width: 24px;
   height: 24px;
@@ -31,17 +33,27 @@
   cursor: pointer;
 }
 
-.name {
+.name, .email {
   font-size: 0.8rem;
   font-weight: 600;
-  font-family: "Inter ", sans-serif;
-  font-style: normal;
-  color: var(--menuText);
-}
-.email {
-  font-size: 0.8rem;
-  font-weight: 400;
-  font-family: "Inter" , sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   color: var(--textColor);
+}
+
+@media (max-width: 768px) {
+  .name, .email {
+    display: none;
+
+  }
+
+  .userInfo {
+    display: flex;
+    justify-content: center;
+    width: 44px;
+  }
+  .avatar{
+    display: none;
+
+  }
 }
