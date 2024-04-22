@@ -1,10 +1,9 @@
-
 .chatContainer {
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
-  background-color:var(--white);
+  background-color: var(--white);
 }
 
 .messageList {
@@ -13,11 +12,13 @@
   flex-grow: 1;
   -ms-overflow-style: none;
   scrollbar-width: none;
-
+  min-height: 100px;
 }
+
 .messageList::-webkit-scrollbar {
   display: none;
 }
+
 .messageRowRight {
   display: flex;
   justify-content: flex-end;
@@ -60,4 +61,3 @@
   width: 24px;
   height: 24px;
 }
-
